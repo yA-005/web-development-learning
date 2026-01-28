@@ -1,0 +1,51 @@
+h2{
+
+    color: darkorange;
+}
+
+
+#idOne{
+
+    color: yellow;
+}
+
+#idTwo{
+
+    color: blue;
+    text-align: center;
+    text-decoration: red underline;
+}
+
+.classOne{
+
+    color: blueviolet;
+}
+
+.classTwo{
+
+    color:deepskyblue;
+    background-color: yellow;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.classFour{
+
+    color:khaki;
+    text-decoration: underline;
+    font-weight: 400;
+    border-color: black;
+    border-width: medium;
+    border-style: double;
+}
+
+.boxModel{
+
+    border: solid 2px black;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5%;
+}
