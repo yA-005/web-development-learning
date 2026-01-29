@@ -1,0 +1,12 @@
+.blockOne{
+
+    background-color: red;
+    display: none;
+}
+
+.inlineOne{
+
+    background-color: green;
+    /* display: block; */
+    display: hidden;
+} 
