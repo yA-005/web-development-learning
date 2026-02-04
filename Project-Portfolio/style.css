@@ -1,0 +1,79 @@
+/* RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* The KISS method for Box Model */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* HEADER STYLING (TASK 2) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo span {
+    color: #007bff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* HOME SECTION STYLING (TASK 3) */
+.home-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s; /* Smooth hover for Task 3 */
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* KISS way to add hover effect */
+}
+
+.home-img img {
+    width: 350px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.home-img img:hover {
+    transform: rotate(5deg); /* Simple animation for Task 3 */
+}
