@@ -1,0 +1,36 @@
+.divContainer{
+
+    display: flex;
+
+    /* flow changed to row(default-value) to see the effect on @media container
+     */
+    
+     flex-direction: row;
+}
+
+
+.divOne{
+
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+.divTwo{
+
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+@media (max-width: 500px){
+
+    .divContainer{
+
+        display: flex;
+        flex-direction: column;
+    }
+}
