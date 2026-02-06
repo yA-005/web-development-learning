@@ -77,3 +77,96 @@ header {
 .home-img img:hover {
     transform: rotate(5deg); /* Simple animation for Task 3 */
 }
+
+/* ABOUT SECTION MAIN CONTAINER */
+
+.about-section {
+
+    /* background-color: #007bff; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 10%;
+    background: #fff;
+
+
+}
+
+/* ABOUT -> IMG TAG */
+
+.about-img img {
+
+    background-color: #007bff;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.05); /* Simple zoom effect */
+}
+
+
+.read-more-btn {
+
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SKILL SECTION  */
+
+.skills-section {
+
+    background-color: aqua;
+    text-align: center;
+    background: #f9f9f9;
+
+}
+
+.skills-container {
+
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+
+
+}
+
+.skill-item {
+
+    /* background-color: aqua; */
+    margin-bottom: 25px;
+}
+
+.skill-info {
+
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.progress-bar {
+
+    /* background-color: tomato; */
+    width: 100%;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #007bff;
+    border-radius: 10px;
+    /* Optional: Simple animation to slide the bar in */
+    transition: width 1s ease-in-out;
+}
