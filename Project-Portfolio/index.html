@@ -8,6 +8,22 @@
 </head>
 <body>
 
+    
+    <!-- <input type="checkbox" id="dark-mode-toggle" class="mode-input">
+
+    <header>
+        <div class="logo">My<span>Portfolio</span></div>
+        <nav>...</nav>
+        
+        <label for="dark-mode-toggle" class="mode-label">
+            <span class="toggle-ball"></span>
+        </label>
+    </header>
+
+    <main class="page-content">
+        </main> -->
+
+
     <!-- header segment  -->
     <header>
         <div class="logo">My<span>Portfolio</span></div>
@@ -16,10 +32,19 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
+
             </ul>
         </nav>
-        <button class="mode-toggle">Day Mode</button>
+        <!-- <button class="mode-toggle">Day Mode</button> -->
+        <div class="mode-container">
+            <input type="checkbox" id="mode-toggle" class="mode-input">
+            <label for="mode-toggle" class="mode-label">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
     </header>
 
         <!-- section segment  -->
@@ -32,21 +57,21 @@
          
         <div class="home-content">
             <h3>Hi, I'm</h3>
-            <h1>Your Name</h1>
+            <h1>Yash Arjitwar</h1>
             <p>A Web Developer specializing in clean, responsive design.</p>
             
             <div class="social-icons">
-                <a href="#">FB</a>
-                <a href="#">IG</a>
-                <a href="#">LI</a>
-                <a href="#">GH</a>
+                <a href="#">Facebook</a> 
+                <a href="#">Instagram</a>
+                <a href="https://www.linkedin.com/in/yasharjitwar" target="_blank">Linkedin</a>
+                <a href="https://github.com/yA-005" target="_blank">Github</a>
             </div>
             
-            <a href="#" class="btn">Download Resume</a>
+            <a href="Assets/Resume.pdf" class="btn" download>Download Resume</a>
         </div>
 
         <div class="home-img">
-            <img src="assets/profile.png" alt="Profile Image">
+            <img src="assets/profile-pic.jpg" alt="Profile Image">
         </div>
     </section>
 
@@ -57,7 +82,7 @@
             <!-- CONTAINER FOR PRFILE IMAGE  -->
 
             <div class="about-img">
-                <img src="assets/about-profile.png" alt="About Me Image">
+                <img src="assets/about-profile.jpg" alt="About Me Image">
             </div>
 
             <!-- CONTAINER FOR BIO DATA -->
@@ -65,11 +90,9 @@
             <div class="about-content">
                  <h2>About Me</h2>
                 <p>
-                    I am a dedicated Web Developer with a focus on creating interactive and 
-                    user-friendly experiences. I love turning complex problems into simple, 
-                    beautiful designs.
+                  With a robust background in Cloud Engineering, I specialize in building scalable, full-stack applications that are as high-performing as they are user-friendly. I bridge the gap between complex infrastructure and beautiful front-end design, turning intricate technical challenges into seamless digital experiences.
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#certifications" class="read-more-btn">Read More</a>
 
             </div>
         </section>
@@ -86,10 +109,10 @@
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>HTML</span>
-                        <span>90%</span>
+                        <span>80%</span>
                     </div>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 90%;"></div>
+                            <div class="progress-fill" style="width: 80%;"></div>
                         </div>
                 </div>
 
@@ -114,12 +137,208 @@
                         <div class="progress-bar">
                             <div class="progress-fill" style="width: 85%;"></div>
                         </div>
-                </div>         
+                </div> 
+                
+                <!-- Skill - 4 -->
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>85%</span>
+                    </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                </div> 
+
+                <!-- Skill - 5 -->
+
+                 <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Azure</span>
+                        <span>80%</span>
+                    </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                </div> 
+
+                <!-- Skill - 6 -->
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>AWS</span>
+                        <span>80%</span>
+                    </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                </div> 
+
+
+
 
             </div>
                 
 
         </section>
+
+        <!-- CERTIFICATE SECTON  -->
+
+        <section id="certifications" class="certs-section"> 
+            <h1 class="section-title">My Certifications</h1>
+                <!-- All certificate container -->
+            <div class="certs-container">
+
+                <!-- certificate-one details  -->
+
+                <div class="cert-card">
+                    <h2>AZ - 104</h2>
+                    <h3>Azure Administrator Associate</h3>
+                    <p style="margin-top: 5px;">As an Azure Administrator Associate, I specialize in implementing and managing cloud infrastructure, including identity, storage, and virtual networks. This certification validates my technical proficiency in optimizing Azure resources to ensure secure, scalable, and high-performing cloud environments.</p>
+                    <a href="Assets/cert-two.pdf" target="_blank" class="cert-link">View certificate</a>
+
+                </div>
+
+                <!-- certificate-two details  -->
+
+                 <div class="cert-card">
+                    <h2>AZ - 800 & 801</h2>
+                    <h3>Windows Server Hybrid Administrator Associate</h3>
+                    <p style="margin-top: 5px;">As a Windows Server Hybrid Administrator Associate, I specialize in configuring and managing core and advanced services using on-premises, hybrid, and cloud technologies. This certification validates my expertise in integrating Windows Server environments with Azure services, ensuring seamless identity, management, and security across hybrid infrastructures.</p>
+                    <a href="Assets/cert-one.pdf" target="_blank" class="cert-link">View certificate</a>
+
+                </div>
+
+                <!-- certificate-three details  -->
+
+                <div class="cert-card">
+                    <h2>Azure OpenAI</h2>
+                    <h3>Generate code with azure openai services</h3>
+                    <p style="margin-top: 5px;">As an Azure OpenAI specialist, I focus on designing and implementing AI solutions that leverage large-scale generative models. This certification validates my expertise in integrating advanced AI capabilities—such as natural language processing and computer vision—into applications while ensuring responsible AI practices and optimized performance within the Azure ecosystem.</p>
+                    <a href="Assets/azure-openai.pdf" target="_blank" class="cert-link">View certificate</a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PORTFOLIO SECTION  -->
+
+        <section id="portfolio" class="project-section">
+
+            <h2>Latest Project</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+
+                    <!-- use netflix image -->
+                    <img src="assets/netflix-logo.jpg" alt="Project One"> 
+                        <div class="project-info">
+                            <h3>Project: Netflix Clone</h3>
+                            <p>A high-performance streaming interface built to practice responsive UI design, featuring dynamic category filtering and an interactive movie preview system.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/aws-logo.jpg" alt="Project Two">
+                        <div class="project-info">
+
+                            <!-- aws -- lambada  -->
+                            <h3>Project: Serverless AWS Deployment</h3>
+                            <p>Automating code deployment to AWS Lambda while managing and troubleshooting serverless architecture to ensure zero-downtime and efficient machine resource management.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/azure-logo.jpg" alt="Project Three">
+                        <div class="project-info">
+
+                            <!-- azure optimization  -->
+                            <h3>Project: Azure Optimization</h3>
+                            <p>Goal Achieved:</strong> Strategically audited cloud resources and implemented auto-scaling to help the client reduce their monthly Azure bill by 15%.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project4.jpg" alt="Project One">
+                        <div class="project-info">
+                            <h3>E-Commerce Site</h3>
+                            <p>Testing Box</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project5.jpg" alt="Project One">
+                        <div class="project-info">
+                            <h3>E-Commerce Site</h3>
+                            <p>Testing Box</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project6.jpg" alt="Project One">
+                        <div class="project-info">
+                            <h3>E-Commerce Site</h3>
+                            <p>Testing Box</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+
+        <!-- CONTACT SECTION  -->
+
+        <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me!</h2>
+    
+    <div class="contact-container">
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            
+            <input type="email" placeholder="Email Address" required>
+            
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+        <!-- FOOTER SECTION  -->
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 Yash Arjitwar | All rights reserved</p>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+            </div>
+
+
+        </footer>
 
 </body>
 </html>
