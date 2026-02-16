@@ -1,0 +1,30 @@
+*{
+
+    box-sizing: border-box;
+}
+
+.sectionBlock{
+
+    background-color: green;
+    padding: 0 20px;
+    display: flex;
+}
+
+.firstDiv {
+
+    background-color: black;
+    /* justify-content: space-between; */
+    width: 100%;
+    /* margin: 20px; */
+}
+
+.secondDiv {
+
+    background-color: aqua;
+    /* justify-content: space-between; */
+    width: 80%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    display: flex;
+    /* margin: 20px */
+}
