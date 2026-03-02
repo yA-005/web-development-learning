@@ -48,5 +48,38 @@ console.log(strOne.toUpperCase());
 console.log(strOne.toLowerCase());
 
 
+console.log(strOne.split(""));
+console.log(strOne.split("").reverse());
+console.log(strOne.split("").reverse().join(""));
+
+// isPalindrome
 
 
+function isPalindrome(str) {
+    
+     // Reverse the string
+  const reversed = str.split('').reverse().join('');
+  // Compare with original
+  return str === reversed;
+}
+
+
+let str = "Hello World";
+
+console.log(str.substring(0, 5));
+console.log(str.slice(6, -3));
+
+let bx = 10;
+console.log(bx);
+
+{
+    let bx = 11;
+    console.log(bx);
+}
+
+cx = bx;
+console.log(cx);
+
+// var is global scope 
+// let are local scope 
+// const cannot be kept blank 
