@@ -83,3 +83,17 @@ console.log(cx);
 // var is global scope 
 // let are local scope 
 // const cannot be kept blank 
+
+// arrow function 
+
+function sum(a, b){
+
+    return a + b;
+}
+
+// sum(1, 2);
+
+const sumOne = (a, b) => a + b;
+
+console.log(sum(10, 12));
+console.log(sumOne(12, 14));
