@@ -97,3 +97,19 @@ const sumOne = (a, b) => a + b;
 
 console.log(sum(10, 12));
 console.log(sumOne(12, 14));
+
+
+// checking the code 
+
+let counter = 0;
+
+function increment(){
+
+    counter += 1;
+}
+
+console.log(increment());
+console.log(increment());
+console.log(increment());
+console.log(increment());
+console.log(counter);
