@@ -18,3 +18,19 @@ var a = function abc() {
 
 a();
 abc(); // will get an error
+
+// changes 
+
+// anonymous function 
+
+const printMessage1 = function (message){
+
+    console.log(`Anonymous function says: ${message}`);
+}
+
+// named function 
+
+const printMessage2 = function printMessage2 (message){
+
+    console.log(`Named function says: ${message}`);
+}
