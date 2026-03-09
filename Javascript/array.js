@@ -92,3 +92,35 @@ const arryThree = ["a", "b", "c", "d", "e", "f", "g"];
 const storing = arryThree.slice(2, 4);
 console.log(arryThree);
 console.log(storing);
+
+// concatination 
+
+let arry1 = [1, 2, 3];
+
+let arry2 = [4, 5, 6];
+
+let conArry = arry1.concat(arry2);
+
+console.log(conArry);
+
+// flattened 
+
+const arry3 = [[1, 2], [3, 4], [5, 6]];
+
+console.log(arry3.flat()); // flat method
+
+// element seraching via indexOf 
+
+const arry4 = ["A", "B", "C"];
+console.log(arry4.indexOf("B")); // indexOf method
+
+// lastIndexOf 
+
+const arry5 = ["a","b","c","a"];
+
+console.log(arry5.lastIndexOf("a")); // last index of method 
+
+// includes 
+
+console.log(arry5.includes("a")); 
+
