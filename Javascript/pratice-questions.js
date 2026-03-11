@@ -41,6 +41,7 @@ function addStudent (courseName, courseCode, studentName, position) {
 
             // inserting the student 
 
+
             students.splice(position, 0, studentName);
 
             return "Student " + studentName + " added to " + courses[i].name + " successfully!";
