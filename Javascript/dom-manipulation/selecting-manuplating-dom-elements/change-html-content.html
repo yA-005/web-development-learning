@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Html elements</title>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div class="rootNode">
+        <h1 id="h1Id">Changing html elements</h1>
+        <p id="p1Id">Lorem ipsum dolor sit.</p>
+        <p id="p2Id">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+       // changing the h1 text 
+       // first select it 
+            let vA = document.getElementById("h1Id");
+       // change it to " Changed by DOM"
+            vA.innerHTML = "Changed by DOM"
+        // another way to do this 
+            document.getElementById("p1Id").innerHTML = "<h2>From p tag to h2 tag</h2>"
+    </script>
+</body>
+</html>
