@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="rootNode">
+        <h1 id="h1Id">Javascript DOM Events</h1>
+        <p id="p1Id">Lorem ipsum dolor sit.</p>
+        <p id="p2Id">Lorem ipsum dolor sit amet.</p>
+        <button id="buttonTag" onclick="changeWhite()">Change To White</button>
+
+        <button id="buttonTag" onclick="changeColor()">Change To Green</button>
+
+        <div id="changeWidth" onmouseover="changeWidth()" onmouseout="mouseOut()" style="width: 200px; border: 1px solid black">
+            Hello
+        </div>
+        <input type="text" onchange="toCapital()">
+
+    </div>
+    <script>
+        // let say when i click on the 
+        // button i want to make the 
+        // whole webpage green
+        // we have to create a function for it 
+            function changeColor () {
+                
+                // what it will do
+                    document.querySelector("body").style.backgroundColor = "green";
+            }
+
+            // now when i hover over my div element with id changeWidth
+                function changeWidth () {
+                // the width of the div should change to 300px    
+                    document.getElementById("changeWidth").style.width = "300px"
+                }
+
+                //now we want to make the width to default when we 
+                // mouse-out 
+                
+                // make a function called as mouseOut
+                    function mouseOut() {
+                    // make the width of the div with id changeWidth
+                    // to 200 px
+                        document.getElementById("changeWidth").style.width = "200px"
+                    }
+                
+                    // make a function that will change the color to
+                    // white on clicking 
+                        function changeWhite () {
+
+                            document.querySelector("body").style.backgroundColor = "white";
+                        }
+                 
+               // let's say we want to make 
+               // the text in the input tag
+               // to capital 
+                
+                    function toCapital () {
+                    
+                    // take the value from the input tag
+                      const fromInputTag = document.querySelector("input")
+                        
+                    // make that value go Capital
+                        let change = fromInputTag.value.toUpperCase();
+                        fromInputTag.value = change;
+                
+                    }
+                    
+                    
+
+            
+    </script>
+</body>
+</html>
