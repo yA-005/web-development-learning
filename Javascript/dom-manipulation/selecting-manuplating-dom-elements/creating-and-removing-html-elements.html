@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and removing HTMl elements<</title>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div id="rootNode">
+        <h1 id="h1Id">Creating and removing HTML elements</h1>
+        <p id="p1Id">Lorem ipsum dolor sit.</p>
+        <p id="p2Id">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- <script>
+       // changing the h1 text 
+       // first select it 
+            let vA = document.getElementById("h1Id");
+       // change it to " Changed by DOM"
+            vA.innerHTML = "Changed by DOM"
+        // another way to do this 
+            document.getElementById("p1Id").innerHTML = "<h2>From p tag to h2 tag</h2>"
+    </script> -->
+    <script>
+        // added a new element in the page 
+            let vC = document.createElement("h3");
+        // add some contain to it 
+            vC.innerHTML = "This is h3 element"
+        // add this element to parent div element 
+        // take the div element in a variable 
+            let vD = document.getElementById("rootNode");
+        // pass our new element to it 
+            vD.appendChild(vC);
+        // let say we want to insert an element before an element 
+            // take the before element 
+                let vE = document.getElementById("p1Id");
+            
+            // to use insertBefore we have to make use of parent element
+            // to give a upper ceiling 
+                let vF = document.getElementById("rootNode");
+            // now, insert the element 
+                vF.insertBefore(vC, vE); 
+
+    </script>
+</body>
+</html>
