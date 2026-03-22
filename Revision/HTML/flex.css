@@ -5,12 +5,17 @@ article {
     border: 1px solid brown;
     background-color: chartreuse;
     padding: 12px;
+    height: 400px;
+   
+   
 }
 
 section {
 
-        display: flex;
-        flex-direction: row;
-        background-color: aqua;
-        gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px; /* Now articles will jump to a new column once they hit 400px */
+    gap: 10px;
 }
+        
