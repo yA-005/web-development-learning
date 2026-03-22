@@ -1,0 +1,48 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+
+        display: flex;
+        /* On phones, stack elements on top of each other */
+        /* first start with mobile  */
+        /* it suggest to do that when you are out  */
+        /* of space go column  */
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    color: black
+    
+}
+
+/* On screens wider than 768px, put elements side-by-side */
+
+@media (min-width: 1080px) {
+
+    .container {
+
+        flex-direction: row;
+        justify-content: space-around;
+        /* align-items: center;  */
+    }
+
+    .box {
+
+        flex: 1;
+        color: blue;
+    }
+}
