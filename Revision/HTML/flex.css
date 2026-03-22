@@ -1,0 +1,16 @@
+
+
+article {
+
+    border: 1px solid brown;
+    background-color: chartreuse;
+    padding: 12px;
+}
+
+section {
+
+        display: flex;
+        flex-direction: row;
+        background-color: aqua;
+        gap: 10px;
+}
