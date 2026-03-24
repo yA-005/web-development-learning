@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>DOM event Listener</h1>
+    </header>
+    <section id="root"> 
+        <p>Lorem ipsum dolor sit.</p>
+        <h3 class="edit">Size</h3>
+    </section>
+    <script>
+        document.querySelector("p").addEventListener("click", changeColor)
+
+        // function that will change the background color on clicking 
+            function changeColor () {
+
+                document.querySelector("body").style.backgroundColor = "green";
+            }
+
+        // lets test eventListner in 
+        // winodw document
+            // extract the value from the class
+                let value = document.querySelector(".edit");
+            // save it to a variable
+                let originalValue = value.textContent;
+            
+            // timmer variable 
+                let resizeTimer;
+                window.addEventListener("resize", displayText)
+                function displayText () {
+
+                // clear any existing timer 
+                    clearTimeout(resizeTimer);
+                
+                    document.querySelector(".edit").textContent = "The window has been resized";
+                    resizeTimer = setTimeout(function() {
+
+                        value.textContent = originalValue;
+                    }, 200);
+
+                }
+    </script>
+</body>
+</html>
