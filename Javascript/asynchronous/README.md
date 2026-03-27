@@ -43,4 +43,3 @@ console.log("3");
 Understanding the difference is essential for writing efficient, non‑blocking JavaScript, especially in environments like browsers and Node.js where blocking the main thread can freeze the UI or slow down the server. Asynchronous patterns let your program stay responsive while waiting for tasks to complete.
 ```
 
-This version is clean, easy to scan, and avoids tables entirely.
