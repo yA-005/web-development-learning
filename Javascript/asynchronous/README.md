@@ -1,4 +1,4 @@
-Here's a readable README without a table, using headings and bullet points:
+
 
 ```markdown
 # Synchronous vs Asynchronous in JavaScript
